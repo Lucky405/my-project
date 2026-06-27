@@ -32,12 +32,12 @@ window.SITE_CONTENT = {
   // ---------- ABOUT TAB ----------
   about: {
     paragraphs: [
-      "Hi — I'm <strong>Your Name</strong>, a student researcher working at the intersection of artificial intelligence and cancer biology. My work lives mostly in hepatocellular carcinoma (HCC, or liver cancer) — I'm interested in the gap between the molecular data we already have and the treatment decisions that data could be informing, if it were modeled the right way.",
+      "Hi — I'm <strong>Venika Kakarla</strong>, a student researcher working at the intersection of artificial intelligence and cancer biology. My work lives mostly in hepatocellular carcinoma (HCC, or liver cancer) — I'm interested in the gap between the molecular data we already have and the treatment decisions that data could be informing, if it were modeled the right way.",
       "I currently do computational research with the <strong>Dhanasekaran Lab</strong> at Stanford School of Medicine, where I work on liver cancer datasets alongside researchers and clinicians. Independently, I've built generative and predictive models — a graph neural network for protein-DNA binding, and a dual-inhibition drug discovery model for HCC recurrence pathways — that have placed at science fairs and been recognized nationally.",
       "Outside the lab, I run a tutoring company I founded, help lead operations for a 1,700+ member AI community in Austin, and co-lead two science clubs at my high school. I think the best research explains itself clearly enough that a stranger could follow the logic — that's what I try to do here."
     ],
     skills: [
-      "Python", "PyTorch", "Graph Neural Networks", "ChemBERTa",
+      "Python", "PyTorch", "TensorFlow",
       "Cell Culture & IHC", "Swift", "R"
     ]
   },
