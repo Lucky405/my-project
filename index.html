@@ -57,52 +57,53 @@
   </button>
 </header>
 
-<!-- ====== HERO ====== -->
-<section class="hero">
-  <div class="hero__grid">
-    <div class="hero__text">
-      <p class="hero__eyebrow">SIGNAL <span class="dot">•</span> LIVE READOUT</p>
-      <h1 class="hero__headline">
-        Where <span class="ink">diagnosis</span><br/>
-        meets <span class="ink">computation.</span>
-      </h1>
-      <p class="hero__sub" id="heroSub">
-        I'm a high school researcher studying how machine learning can catch what the eye misses —
-        earlier detection, faster triage, better outcomes. This is my lab notebook, made public.
-      </p>
-      <div class="hero__meta">
-        <div class="meta-card">
-          <span class="meta-card__label">Focus</span>
-          <span class="meta-card__value" id="metaFocus">Diagnostic ML</span>
-        </div>
-        <div class="meta-card">
-          <span class="meta-card__label">Status</span>
-          <span class="meta-card__value"><span class="live-dot"></span> Actively researching</span>
-        </div>
-        <div class="meta-card">
-          <span class="meta-card__label">Based in</span>
-          <span class="meta-card__value" id="metaLocation">Austin, TX</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero__graphic" aria-hidden="true" id="heroGraphic">
-      <!-- Animated molecular / graph-network visual injected by JS -->
-    </div>
-  </div>
-</section>
-
-<div class="trace-divider" aria-hidden="true">
-  <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
-    <path class="trace-divider__path" d="M0,20 L120,20 L140,4 L160,36 L180,20 L320,20 L340,10 L360,30 L380,20 L1200,20" />
-  </svg>
-</div>
-
 <!-- ====== MAIN PANELS ====== -->
 <main class="panels">
 
   <!-- ABOUT -->
   <section class="panel" id="panel-about" data-panel="about">
+
+    <!-- HERO: only shown on the About tab -->
+    <div class="hero">
+      <div class="hero__grid">
+        <div class="hero__text">
+          <p class="hero__eyebrow">SIGNAL <span class="dot">•</span> LIVE READOUT</p>
+          <h1 class="hero__headline">
+            Where <span class="ink">diagnosis</span><br/>
+            meets <span class="ink">computation.</span>
+          </h1>
+          <p class="hero__sub" id="heroSub">
+            I'm a high school researcher studying how machine learning can catch what the eye misses —
+            earlier detection, faster triage, better outcomes. This is my lab notebook, made public.
+          </p>
+          <div class="hero__meta">
+            <div class="meta-card">
+              <span class="meta-card__label">Focus</span>
+              <span class="meta-card__value" id="metaFocus">Diagnostic ML</span>
+            </div>
+            <div class="meta-card">
+              <span class="meta-card__label">Status</span>
+              <span class="meta-card__value"><span class="live-dot"></span> Actively researching</span>
+            </div>
+            <div class="meta-card">
+              <span class="meta-card__label">Based in</span>
+              <span class="meta-card__value" id="metaLocation">Austin, TX</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__graphic" aria-hidden="true" id="heroGraphic">
+          <!-- Animated molecular / graph-network visual injected by JS -->
+        </div>
+      </div>
+    </div>
+
+    <div class="trace-divider" aria-hidden="true">
+      <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+        <path class="trace-divider__path" d="M0,20 L120,20 L140,4 L160,36 L180,20 L320,20 L340,10 L360,30 L380,20 L1200,20" />
+      </svg>
+    </div>
+
     <div class="panel__head">
       <span class="panel__index">01</span>
       <h2 class="panel__title">About Me</h2>
@@ -210,7 +211,6 @@
     </div>
 
     <div class="blog-toolbar">
-      <p class="blog-toolbar__note">Posts here are visible to every visitor — they live in <code>js/posts.js</code> in the repo.</p>
       <button class="btn-primary" id="newPostBtn">+ New Post</button>
     </div>
 
@@ -254,12 +254,7 @@
     <!-- Code output (shown after "Generate Code") -->
     <div class="blog-codeout panel--hidden" id="blogCodeOut">
       <button class="blog-editor__cancel" id="codeOutBackBtn">&larr; Back to editor</button>
-      <h3 class="blog-codeout__title">Copy this into <code>js/posts.js</code></h3>
-      <p class="blog-codeout__help">
-        Paste this as a new entry inside the <code>window.SITE_POSTS = [ ... ]</code> array
-        (right after the opening bracket works fine), save the file, then commit and push to GitHub.
-        Your post will be live for everyone within about a minute.
-      </p>
+      <h3 class="blog-codeout__title">Your post, ready to add</h3>
       <div class="blog-codeout__block-wrap">
         <button class="blog-codeout__copy" id="copyCodeBtn">Copy</button>
         <pre class="blog-codeout__block" id="codeOutBlock"></pre>
